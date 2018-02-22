@@ -8,3 +8,13 @@ C:\Users\jovenson.omagap\Desktop\Personal\Git\netcoreWebApi\obj\Debug\netcoreapp
 C:\Users\jovenson.omagap\Desktop\Personal\Git\netcoreWebApi\obj\Debug\netcoreapp2.0\netcoreWebApi.AssemblyInfo.cs
 C:\Users\jovenson.omagap\Desktop\Personal\Git\netcoreWebApi\obj\Debug\netcoreapp2.0\netcoreWebApi.dll
 C:\Users\jovenson.omagap\Desktop\Personal\Git\netcoreWebApi\obj\Debug\netcoreapp2.0\netcoreWebApi.pdb
+C:\Users\Omagap Family\Desktop\Git\netcoreWebApi\bin\Debug\netcoreapp2.0\netcoreWebApi.deps.json
+C:\Users\Omagap Family\Desktop\Git\netcoreWebApi\bin\Debug\netcoreapp2.0\netcoreWebApi.runtimeconfig.json
+C:\Users\Omagap Family\Desktop\Git\netcoreWebApi\bin\Debug\netcoreapp2.0\netcoreWebApi.runtimeconfig.dev.json
+C:\Users\Omagap Family\Desktop\Git\netcoreWebApi\bin\Debug\netcoreapp2.0\netcoreWebApi.dll
+C:\Users\Omagap Family\Desktop\Git\netcoreWebApi\bin\Debug\netcoreapp2.0\netcoreWebApi.pdb
+C:\Users\Omagap Family\Desktop\Git\netcoreWebApi\obj\Debug\netcoreapp2.0\netcoreWebApi.csproj.CoreCompileInputs.cache
+C:\Users\Omagap Family\Desktop\Git\netcoreWebApi\obj\Debug\netcoreapp2.0\netcoreWebApi.AssemblyInfoInputs.cache
+C:\Users\Omagap Family\Desktop\Git\netcoreWebApi\obj\Debug\netcoreapp2.0\netcoreWebApi.AssemblyInfo.cs
+C:\Users\Omagap Family\Desktop\Git\netcoreWebApi\obj\Debug\netcoreapp2.0\netcoreWebApi.dll
+C:\Users\Omagap Family\Desktop\Git\netcoreWebApi\obj\Debug\netcoreapp2.0\netcoreWebApi.pdb
