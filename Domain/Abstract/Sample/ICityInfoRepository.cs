@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using XYC.Domain.Entities.Sample;
+
 namespace XYC.Domain.Abstract.Sample
 {
     public interface ICityInfoRepository
