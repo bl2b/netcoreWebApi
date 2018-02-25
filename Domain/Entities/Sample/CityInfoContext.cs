@@ -1,1 +1,6 @@
-ECHO is on.
+
+namespace XYC.Domain.Entities.Sample{
+    public class CityInfoContext{
+        
+    }
+}

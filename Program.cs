@@ -10,6 +10,9 @@ using Microsoft.Extensions.Logging;
 
 namespace netcoreWebApi
 {
+    /// <summary>
+    /// Responsible for configuring and running the application
+    /// </summary>
     public class Program
     {
         public static void Main(string[] args)
