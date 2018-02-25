@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Newtonsoft.Json.Serialization;
 
 namespace netcoreWebApi
 {
@@ -31,9 +32,17 @@ namespace netcoreWebApi
         /// </summary>        
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc()
-            .AddMvcOptions(x => x.OutputFormatters.Add(
-                new XmlDataContractSerializerOutputFormatter()));
+            services.AddMvc()//
+            // .AddJsonOptions(o =>{ // this for json return convention. to return the object starts with capital letter
+            //     if(o.SerializerSettings.ContractResolver != null)
+            //     {
+            //         var castedResolver = o.SerializerSettings.ContractResolver as DefaultContractResolver;
+            //         castedResolver.NamingStrategy = null;
+            //     }                
+            // });
+
+            // .AddMvcOptions(x => x.OutputFormatters.Add(
+            //     new XmlDataContractSerializerOutputFormatter()));
         }
 
         /// <summary>
@@ -53,6 +62,7 @@ namespace netcoreWebApi
                 app.UseExceptionHandler();
             }
 
+            app.UseStatusCodePages(); // show status code on the browser
             app.UseMvc();
 
             // app.Run((context) => {

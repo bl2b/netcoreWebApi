@@ -15,13 +15,39 @@ namespace XYC.Domain.Fakes
                 {
                     Id = 1,
                     Name = "New York City",
-                    Description = "The one with the big park"
+                    Description = "The one with the big park",
+                    PointOfInterest =  new List<PointOfInterestDto>()
+                    {
+                        new PointOfInterestDto(){
+                            Id = 1,
+                            Name = "Central Park",
+                            Description = "df12312dsf"
+                        },
+                        new PointOfInterestDto(){
+                            Id = 2,
+                            Name = "Central Park2",
+                            Description = "df12312dsf34"
+                        }
+                    }
                 },
                 new CityDto()
                 {
                     Id = 2,
                     Name = "Caloocan City",
-                    Description = "The place wher so many kind people"
+                    Description = "The place wher so many kind people",
+                    PointOfInterest =  new List<PointOfInterestDto>()
+                    {
+                        new PointOfInterestDto(){
+                            Id = 1,
+                            Name = "Central Park2",
+                            Description = "df12312dsf"
+                        },
+                        new PointOfInterestDto(){
+                            Id = 2,
+                            Name = "Central Park22",
+                            Description = "df12312dsf34"
+                        }
+                    }
                 },
                 new CityDto()
                 {
