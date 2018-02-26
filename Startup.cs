@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json.Serialization;
+using XYC.Domain.Abstract.Sample;
+using XYC.Domain.Concrete.Sample;
 
 namespace netcoreWebApi
 {
@@ -19,16 +21,17 @@ namespace netcoreWebApi
     /// </summary>
     public class Startup
     {
+
+        public static IConfiguration Configuration { get; private set; }
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
-
         /// <summary>
         /// used to add services to the container for DI, and to configure those services
         /// This method gets called by the runtime. Use this method to add services to the container.
+        /// For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
         /// </summary>        
         public void ConfigureServices(IServiceCollection services)
         {
@@ -43,6 +46,12 @@ namespace netcoreWebApi
             //         castedResolver.NamingStrategy = null;
             //     }                
             // });
+
+            #if DEBUG
+            services.AddTransient<IMailService, LocalMailService>();
+#           else
+            services.AddTransient<IMailService, CloudMailService>();
+            #endif
         }
 
         /// <summary>
@@ -51,7 +60,14 @@ namespace netcoreWebApi
         /// </summary>
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            loggerFactory.AddConsole();
+            // No need to add these loggers in ASP.NET Core 2.0: the call to WebHost.CreateDefaultBuilder(args) 
+            // in the Program class takes care of that.
+
+            //loggerFactory.AddConsole();
+            //loggerFactory.AddDebug();
+
+            //loggerFactory.AddProvider(new NLog.Extensions.Logging.NLogLoggerProvider());
+            loggerFactory.AddNLog();
 
             if (env.IsDevelopment()) //you can change this on launch.json
             {
