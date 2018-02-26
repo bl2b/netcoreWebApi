@@ -32,7 +32,10 @@ namespace netcoreWebApi
         /// </summary>        
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc()//
+            services.AddMvc()
+            .AddMvcOptions(x => x.OutputFormatters.Add( // this support the Formatters and Content
+                new XmlDataContractSerializerOutputFormatter()));
+
             // .AddJsonOptions(o =>{ // this for json return convention. to return the object starts with capital letter
             //     if(o.SerializerSettings.ContractResolver != null)
             //     {
@@ -40,9 +43,6 @@ namespace netcoreWebApi
             //         castedResolver.NamingStrategy = null;
             //     }                
             // });
-
-            // .AddMvcOptions(x => x.OutputFormatters.Add(
-            //     new XmlDataContractSerializerOutputFormatter()));
         }
 
         /// <summary>

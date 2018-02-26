@@ -24,33 +24,5 @@ namespace XYC.Sample.API.Controllers
             }
             return Ok(cityToReturn);
         }
-
-        [HttpGet("{cityId}/pointofinterest")]
-        public IActionResult GetPointOfInterest(int cityId)
-        {
-            var city = CitiesDataStore.Current.Cities.FirstOrDefault(x => x.Id == cityId);
-            if(city == null)
-            {
-                return NotFound();
-            }
-            return Ok(city.PointOfInterest);
-        }
-
-        [HttpGet("{cityId}/pointofinterest/{id}")]
-        public IActionResult GetPointOfInterest(int cityId, int id)
-        {
-            var city = CitiesDataStore.Current.Cities.FirstOrDefault(x => x.Id == cityId);
-            if(city == null)
-            {
-                return NotFound();
-            }
-            
-            var pointofinterest = city.PointOfInterest.FirstOrDefault(c => c.Id == id);
-            if(pointofinterest == null)
-            {
-                return NotFound();
-            }
-            return Ok(pointofinterest);
-        }
     }
 }

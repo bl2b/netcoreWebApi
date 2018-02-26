@@ -53,7 +53,20 @@ namespace XYC.Domain.Fakes
                 {
                     Id = 3,
                     Name = "New Born City",
-                    Description = "Lorem ipsum"
+                    Description = "Lorem ipsum",
+                    PointOfInterest =  new List<PointOfInterestDto>()
+                    {
+                        new PointOfInterestDto(){
+                            Id = 1,
+                            Name = "Central Park3",
+                            Description = "df12312dsf"
+                        },
+                        new PointOfInterestDto(){
+                            Id = 2,
+                            Name = "Central Park33",
+                            Description = "df12312dsf34"
+                        }
+                    }
                 }
             };
         }

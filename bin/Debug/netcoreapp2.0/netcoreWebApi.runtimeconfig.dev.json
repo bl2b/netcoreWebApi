@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\Omagap Family\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Omagap Family\\.nuget\\packages",
+      "C:\\Users\\jovenson.omagap\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\jovenson.omagap\\.nuget\\packages",
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ]
   }
