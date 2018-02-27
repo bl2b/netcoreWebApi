@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.Formatters;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -14,6 +15,9 @@ using Newtonsoft.Json.Serialization;
 using NLog.Extensions.Logging;
 using XYC.Domain.Abstract.Sample;
 using XYC.Domain.Concrete.Sample;
+using XYC.Domain.Context.Sample;
+using XYC.Services.Abstract.Sample;
+using XYC.Services.Concrete.Sample;
 
 namespace netcoreWebApi
 {
@@ -52,6 +56,11 @@ namespace netcoreWebApi
             #else
             services.AddTransient<IMailService, CloudMailService>();
             #endif
+
+            var connectionString = Startup.Configuration["connectionStrings:dbConnectionString"];
+            services.AddDbContext<SampleContext>(o => o.UseSqlServer(connectionString));
+
+            services.AddScoped<INorthwindRepository, NorthwindRepository>();
         }
 
         /// <summary>
@@ -77,7 +86,7 @@ namespace netcoreWebApi
             {
                 app.UseExceptionHandler();
             }
-
+            
             app.UseStatusCodePages(); // show status code on the browser
             app.UseMvc();
 
