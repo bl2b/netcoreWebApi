@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json.Serialization;
+using NLog.Extensions.Logging;
 using XYC.Domain.Abstract.Sample;
 using XYC.Domain.Concrete.Sample;
 
@@ -21,7 +22,6 @@ namespace netcoreWebApi
     /// </summary>
     public class Startup
     {
-
         public static IConfiguration Configuration { get; private set; }
         public Startup(IConfiguration configuration)
         {
@@ -49,7 +49,7 @@ namespace netcoreWebApi
 
             #if DEBUG
             services.AddTransient<IMailService, LocalMailService>();
-#           else
+            #else
             services.AddTransient<IMailService, CloudMailService>();
             #endif
         }

@@ -12971,28 +12971,29 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Omagap Family\\.nuget\\packages\\": {},
+    "C:\\Users\\jovenson.omagap\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Omagap Family\\Desktop\\Git\\netcoreWebApi\\netcoreWebApi.csproj",
+      "projectUniqueName": "C:\\Users\\jovenson.omagap\\Desktop\\Personal\\Git\\netcoreWebApi\\netcoreWebApi.csproj",
       "projectName": "netcoreWebApi",
-      "projectPath": "c:\\Users\\Omagap Family\\Desktop\\Git\\netcoreWebApi\\netcoreWebApi.csproj",
-      "packagesPath": "C:\\Users\\Omagap Family\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Omagap Family\\Desktop\\Git\\netcoreWebApi\\obj\\",
+      "projectPath": "C:\\Users\\jovenson.omagap\\Desktop\\Personal\\Git\\netcoreWebApi\\netcoreWebApi.csproj",
+      "packagesPath": "C:\\Users\\jovenson.omagap\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jovenson.omagap\\Desktop\\Personal\\Git\\netcoreWebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Omagap Family\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\jovenson.omagap\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "http://nuget.nowcom.com/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

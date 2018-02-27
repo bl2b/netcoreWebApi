@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using XYC.Domain.Fakes;
+using XYC.Services.Fakes.Sample;
 
 namespace XYC.Sample.API.Controllers
 {

@@ -2,8 +2,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
-using XYC.Domain.Fakes;
-using XYC.Models.Sample;
+using XYC.Services.Fakes.Sample;
+using XYC.Common.Models.Sample;
 
 namespace XYC.Sample.API.Controllers
 {

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using XYC.Models.Sample;
+using XYC.Common.Models.Sample;
 
-namespace XYC.Domain.Fakes
+namespace XYC.Services.Fakes.Sample
 {
     public class CitiesDataStore
     {

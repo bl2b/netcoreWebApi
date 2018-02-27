@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace XYC.Models.Sample{
-    public class PointOfInterestForCreationDto
+namespace XYC.Common.Models.Sample{
+    public class PointOfInterestForUpdateDto
     {
         [Required]
         [MaxLength(50)]

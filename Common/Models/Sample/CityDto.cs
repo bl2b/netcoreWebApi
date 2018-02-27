@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace XYC.Models.Sample
+namespace XYC.Common.Models.Sample
 {
     public class CityDto
     {

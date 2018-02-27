@@ -1,4 +1,5 @@
-namespace XYC.Models.Sample{
+namespace XYC.Common.Models.Sample
+{
     public class PointOfInterestDto
     {
         public int Id { get; set; }
